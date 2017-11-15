@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TopoR Project (unfinished)</title>
+        <link href="//fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!--<script src="./assets/jquery.min.js"></script>-->
+        <script src="./assets/player.js"></script>
+        <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <div id="popDiv">
+            <div id="played">
+                <div class="text-muted">History</div>
+                <hr class="hr-muted">
+                <div id="play-history-container">
+
+                </div>
+            </div>
+            <div id="nowplaying">
+                <div class="text-muted">Playing</div>
+                <hr class="hr-muted">
+                <div id="controls-container">
+                    <span id="muteControl" class="control" onclick="Mute();">&#128263;</span>
+                    <span id="pauseControl" class="control" onclick="Pause();">&#9208;</span>
+                    <span class="control" onclick="Skip();">&#9193;</span>
+                </div>
+                <div id="playingSong">YOU &amp; ME</div>
+                <div id="playingComposer"></div>
+                <div id="songSeek"></div>
+            </div>
+        </div>
+    </body>
+</html>
